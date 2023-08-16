@@ -3,7 +3,7 @@
 
 *.key
 *.pem
-*.log
+*.log.*
 
 serverless.js
 *.py
