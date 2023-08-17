@@ -27,7 +27,6 @@ resource "aws_security_group" "ecurity_group1" {
   description = "security group for ec2 instance"
   vpc_id      = aws_vpc.vpc1.id
 
-  // Inbound rule for SSH access
   ingress {
     from_port   = 22
     to_port     = 22
@@ -35,7 +34,6 @@ resource "aws_security_group" "ecurity_group1" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  // Inbound rule for http access
   ingress {
     from_port   = 80
     to_port     = 80
