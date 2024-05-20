@@ -8,6 +8,6 @@ terraform validate
 
 terraform plan
 terraform apply
-
+```
 ## Configuration Management
 Further configuration (e.g. for security) will be added as Ansible playbooks.
