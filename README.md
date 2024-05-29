@@ -1,5 +1,5 @@
 ## Infrastructure as Code
-In this repo, I will be adding infrastructure as code templates using Terraform for each of the AWS main services like IAM, EC2, S3, VPC, Lambda.
+In this repo, I will be adding infrastructure as code templates using Terraform for each of the AWS main services like IAM, VPC, Lambda, etc.
 ```terraform
 terraform init
 
