@@ -1,4 +1,4 @@
-## Infrastructure as Code (IaC)
+## Infrastructure as Code
 In this repo, I will be adding infrastructure as code templates using Terraform for each of the AWS main services like IAM, EC2, S3, VPC, Lambda.
 ```terraform
 terraform init
@@ -14,5 +14,5 @@ terraform apply
 // to delete the infrastructure (e.g. for cost control), use:
 terraform destroy
 ```
-## Configuration Management
-Further configurations (e.g. for security) will be added as Ansible files.
+### Configuration Management
+Further configurations (e.g. for security) can be added using Ansible.
