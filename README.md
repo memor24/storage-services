@@ -14,5 +14,5 @@ terraform apply
 // to delete the infrastructure (e.g. for cost control), use:
 terraform destroy
 ```
-### Configuration Management
+#### Configuration Management
 Further configurations (e.g. for security) can be added using Ansible.
