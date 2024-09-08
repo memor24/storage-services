@@ -25,7 +25,7 @@ variable "availability_zone" {
 variable "instance_ami" {
   description = "The AMI ID for the EC2 instance"
   type        = string
-  default     = "ami-0c55b159cbfafe1f0"  # sample ami for aws linux free tier
+  default     = "ami-0c55b159cbfafe1f0" # sample ami for aws linux free tier
 }
 
 variable "instance_type" {
