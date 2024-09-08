@@ -6,7 +6,7 @@ variable "aws_region" {
 
 variable "vpc_id" {
   description = "VPC ID to use if not creating VPC."
-  default     = null
+  default     = "123456789"
   type        = string
 }
 
