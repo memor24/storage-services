@@ -11,10 +11,10 @@ resource "aws_internet_gateway" "igw" {
   }
 }
 #defining igw attachment
-resource "aws_internet_gateway_attachment" "igwa" {
-  internet_gateway_id = aws_internet_gateway.igw.id
-  vpc_id              = aws_vpc.vpc1.id
-}
+# resource "aws_internet_gateway_attachment" "igwa" {
+#   internet_gateway_id = aws_internet_gateway.igw.id
+#   vpc_id              = aws_vpc.vpc1.id
+# }
 
 
 #defining subnet
