@@ -1,25 +1,11 @@
-# terraform {
-#   required_version = ">= 0.15.0"
-#   required_providers {
-#     aws = {
-#       source  = "hashicorp/aws"
-#       version = "~> 5.0"
-#     }
-#   }
-# }
-
-# provider "aws" {
-#   region = "us-west-2"
-# }
-
 resource "aws_vpc" "vpc1" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = var.vpc_cidr_block
 }
 
 resource "aws_subnet" "subnet1" {
   vpc_id     = aws_vpc.vpc1.id
   cidr_block = "10.0.1.0/24"
-  availability_zone = "us-west-2a"
+  availability_zone = var.availability_zone
 }
 
 # defining security group for the ec2 within the subnet
@@ -54,10 +40,10 @@ resource "aws_security_group" "ecurity_group1" {
 
 resource "aws_instance" "instance1" {
   ami           = "ami-0c55b159cbfafe1f0"  // sample ami for aws linux free tier
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
   subnet_id     = aws_subnet.subnet1.id
   security_groups = [aws_security_group.security_group1.id]
-  key_name = "keypair1"
+  key_name = var.key_name
 
   tags = {
     Name = "ec2instance1"
