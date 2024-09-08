@@ -3,9 +3,9 @@ output "vpc_id" {
   value       = aws_vpc.vpc1.id
 }
 
-output "aws_internet_gateway" {
+output "aws_internet_gateway_id" {
   value = aws_internet_gateway.igw.id
-  description = "giw id"
+  description = "The id of the internet gateway"
 }
 
 output "subnet_id" {
