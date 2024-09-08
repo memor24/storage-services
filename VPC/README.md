@@ -1,1 +1,3 @@
+This is a basic VPC template (called vpc1) with a VPC endpoint, subnet and instance. 
 
+The next ones (vpc2, vpc3) will be more complex with public subnet+NAT gateway, private subnets with multiple services, routing tables and multiple availability zones.
