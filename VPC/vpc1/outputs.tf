@@ -20,7 +20,6 @@ output "instance_public_ip" {
 
 
 #data source for igw ID
-variable "vpc_id" {}
 
 data "aws_internet_gateway" "igw" {
   filter {
