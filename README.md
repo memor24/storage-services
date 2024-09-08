@@ -23,3 +23,8 @@ First install a docker container of localstack, then launch it in a seperate ter
 ```
 localstack start
 ```
+In this case, you want to use tflocal command instead of terraform command to avoid credentials complications:
+```
+tflocal plan
+tflocal apply
+```
