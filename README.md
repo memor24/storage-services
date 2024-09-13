@@ -13,7 +13,7 @@ To create the infrastructure as planned, use:
 ```
 terraform apply
 ```
-To delete and completely remove the infrastructure (e.g. for cost control), use:
+To delete (e.g. for cost control) and completely remove the infrastructure, use:
 ```
 terraform destroy
 ```
