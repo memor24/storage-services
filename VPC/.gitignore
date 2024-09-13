@@ -20,6 +20,12 @@ test_env_terraforms/
 *.tfstate
 *.tfstate.*
 
+# ignore tf files
+terraform.tfstate
+terraform.tfstate.backup
+.terraform
+.terrafor*
+
 # Ignore Node.js related files
 node_modules/
 npm-debug.log
