@@ -4,6 +4,6 @@ output "aws_s3_bucket_name" {
 }
 
 output "aws_s3_bucket_version" {
-  
-  value = aws_s3_bucket_version.versioning_example.id
+description = "printing the example bucket's id/version"
+  value = aws_s3_bucket.example.id
 }
