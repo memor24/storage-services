@@ -19,7 +19,7 @@ terraform destroy
 ```
 #### Note
 If you don't want to deploy them directly to AWS, you may also use Local Stack that helps with deploying to a localized AWS environment. 
-First install a docker container of localstack, then launch it in a seperate terminal before terraform apply.
+First install a docker container of localstack, then launch it in a seperate terminal before terraform plan/apply.
 ```
 localstack start
 ```
