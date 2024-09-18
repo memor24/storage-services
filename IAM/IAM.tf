@@ -1,4 +1,7 @@
-# IAM access grant
+
+#################################
+# IAM access grant for S3
+################################
 
 resource "aws_s3control_access_grants_instance" "example" {}
 
@@ -22,3 +25,7 @@ resource "aws_s3control_access_grant" "example" {
     grantee_identifier = aws_iam_user.example.arn
   }
 }
+
+########################################
+# IAM access control for Lamda function tbu
+#########################################
