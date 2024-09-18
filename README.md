@@ -1,5 +1,5 @@
 ## Infrastructure as Code
-In this repo, I will be adding infrastructure as code templates using Terraform for each of the AWS main services like IAM, S3, EC2, VPC, Lambda, DynamoDB, etc.
+In this repo, I will be adding infrastructure as code templates using Terraform for each of the AWS main services like IAM, S3, EC2, VPC, RDS, DynamoDB, Lambda.
 ```terraform
 terraform init
 ```
@@ -19,7 +19,7 @@ terraform destroy
 ```
 #### Note
 If you don't want to deploy them directly to AWS, you may also use Local Stack that helps with deploying to a localized AWS environment. 
-First install a docker container of localstack, then launch it in a seperate terminal before terraform apply.
+First install a docker container of localstack, then launch it in a seperate terminal before terraform plan/apply.
 ```
 localstack start
 ```
