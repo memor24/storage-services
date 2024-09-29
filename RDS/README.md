@@ -1,1 +1,1 @@
-Terraform template of AWS RDS with PostgreSQL as the example RDS.
+Terraform template with modules of AWS RDS for varied use cases
