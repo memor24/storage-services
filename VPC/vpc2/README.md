@@ -1,1 +1,0 @@
-To be updated with a schematics of vpc2
