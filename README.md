@@ -21,10 +21,17 @@ terraform destroy
 If you don't want to deploy them directly to AWS, you may also use Local Stack that helps with deploying to a localized AWS environment. 
 First install a docker container of localstack, then launch it in a seperate terminal before terraform plan/apply.
 ```
+docker run -d localstack/localstack
 localstack start
 ```
 In this case, you want to use tflocal command instead of terraform command to avoid credentials related complications:
 ```
 tflocal apply
+tflocal state list
+```
+Make sure to clean up the resources:
+```
 tflocal destroy
+localstack stop
+docker rm [container_id]
 ```
