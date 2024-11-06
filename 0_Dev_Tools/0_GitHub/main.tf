@@ -16,7 +16,7 @@ resource "github_repository_file" "new_file" {
 }
 
 resource "github_branch" "new_branch" {
-  repository = "test"
+  repository = "new_repo"
   branch     = "dev"
 }
 
