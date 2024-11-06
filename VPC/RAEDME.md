@@ -1,3 +1,3 @@
-This is a basic VPC template (called vpc1) with the main VPC features.
+The vpc1 is a VPC template with the main VPC features.
 
-The next one (vpc2) will be a practical VPC example using Terraform module and a schematics.
+The vpc2 is a VPC template using Terraform module.
