@@ -18,8 +18,9 @@ To delete (e.g. for cost control) and completely remove the infrastructure, use:
 terraform destroy
 ```
 #### Note
-If you don't want to deploy them directly to AWS, you may also use Local Stack that helps with deploying to a localized AWS environment. 
-First install a docker container of localstack, then launch it in a seperate terminal before terraform plan/apply.
+If you want to deploy them for experimentation without the cost directly billed to your AWS, you may use a sandbox AWS environment like [kodekloud AWS](https://kodekloud.com/playgrounds/playground-aws), \
+or you may also use Local Stack that helps with deploying to a local AWS emulated environment. 
+For that, install a docker container of localstack, then launch it in a seperate terminal before terraform plan/apply.
 ```
 docker run -d localstack/localstack
 #or
