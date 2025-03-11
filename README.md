@@ -1,4 +1,4 @@
-## Infrastructure as Code
+## Multicloud storage services infrastructure as code
 In this repo, I will be adding infrastructure as code using Terraform for varied storage services:
 
 - Digital Ocean: block storage and object storage
