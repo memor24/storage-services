@@ -8,12 +8,19 @@ resource digitalocean_project "Storage_Project" {
 }
 
 # create a new tag for later use
-resource digitalocean_tag "object_storage" {
+resource digitalocean_tag "new_tag" {
     name="object_storage"
 }
 
-resource "" {
 
+# object storage buckets are called spaces in digitalocean
+resource digitalocean_spaces_bucket "new_bucket" {
+    name = "new_bucket"
+    region = "nyc1"
+    acl = "private"
+    tags = [digitalocean_tag.new_tag.id]
 }
 
-
+output space_bucket_endpoint {
+    value = digitalocean_spaces_bucket.new_bucket.endpoint
+}

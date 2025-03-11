@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 0.12"
+  required_version = ">= 0.13"
   required_providers {
     digitalocean{
     source="digitalocean/digitalocean" 
@@ -9,10 +9,9 @@ terraform {
   }
 }
 
-provider "digitalocean" {
-    Token = var.digitalocean_token
-    # or export credentials beforehand
+provider "digitalocean" {               # or export credentials beforehand
+    Token = var.digitalocean_token      # export DIGITALOCEAN_TOKEN="your-token"
     spaces_access_id = var.accesss_id
     spaces_secret_key = var.secret_key
 }
-}
+
