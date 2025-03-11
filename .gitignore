@@ -52,3 +52,5 @@ Thumbs.db
 # Ignore SQLite database files
 *.sqlite
 *.db
+*.tfvars
+*.tfstate
