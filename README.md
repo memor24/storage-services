@@ -1,6 +1,13 @@
 ## Infrastructure as Code
-In this repo, I will be adding infrastructure as code templates using Terraform for each of the AWS main services like IAM, S3, EC2, VPC, RDS, DynamoDB, Lambda.
-```terraform
+In this repo, I will be adding infrastructure as code using Terraform for varied storage services:
+
+- Digital Ocean: block storage and object storage
+- GCP: cloud storage
+- MinIO: s3 compaibility and distributed storage
+
+
+Use Terraform to provision in your environment:
+```
 terraform init
 ```
 To clean the code syntax, basic validation and detailed planning, use:
@@ -13,7 +20,7 @@ To create the infrastructure as planned, use:
 ```
 terraform apply
 ```
-To delete (e.g. for cost control) and completely remove the infrastructure, use:
+To delete and completely remove the infrastructure, use:
 ```
 terraform destroy
 ```
